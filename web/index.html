@@ -9,6 +9,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="upstyle">
+
+  <meta name="google-signin-client_id" content="966239910353-7jk5mf7378q2p7ifetg9h47n6npt1alt.apps.googleusercontent.com">
+
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -28,6 +31,27 @@
       });
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+  <!-- Other firebase SDKs/config here -->
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: "AIzaSyDtiMrP1hHobD0BILO5Elcb6ojceQFUMog",
+      authDomain: "style-ca5e3.firebaseapp.com",
+      databaseURL: "https://style-ca5e3.firebaseio.com",
+      projectId: "style-ca5e3",
+      storageBucket: "style-ca5e3.appspot.com",
+      messagingSenderId: "966239910353",
+      appId: "1:966239910353:web:6ce9bf9fb45aa2382708f0",
+      measurementId: "G-0TVN6B0XF6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <!-- END OF FIREBASE INIT CODE -->
+
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
